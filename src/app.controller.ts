@@ -16,6 +16,6 @@ export class AppController {
 
   @Get('/test')
   async test() {
-    return await this.db.client.user.findMany();
+    return await this.db.user.findMany();
   }
 }
