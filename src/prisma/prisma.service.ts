@@ -7,7 +7,7 @@ export class AdapterPrismaService extends PrismaClient {
 
   constructor() {
     super({
-      log: ['info', 'query', 'warn', 'error'],
+      log: ['warn', 'error'],
     });
   }
 }
