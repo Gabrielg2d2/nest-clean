@@ -6,6 +6,8 @@ export class AdapterPrismaService extends PrismaClient {
   public client: PrismaClient;
 
   constructor() {
-    super();
+    super({
+      log: ['info', 'query', 'warn', 'error'],
+    });
   }
 }
